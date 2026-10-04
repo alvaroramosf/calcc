@@ -1,0 +1,31 @@
+========================================================================
+ELEKTRONIKA MK-56 PHYSICAL KEYBOARD TYPING GUIDE
+Architecture: Soviet RPN (4-level X/Y/Z/T + X1) | Max Steps: 98 | Consumed: 21 (21.4%)
+Instructions for operator: Switch to [ПРОГ] mode, press [В/О], then type:
+========================================================================
+Step | Keystroke Sequence       | Function / Action Description
+-----+--------------------------+---------------------------------------
+ 00  | [ БП ]                   | Unconditional Jump
+ 01  | [ 1 ] [ 1 ]              | Jump destination address
+ 02  | [ F ] [ π ]              | Load constant Pi into X
+ 03  | [ В↑ ]                   | Push X to Y (Enter)
+ 04  | [ x→П ] [ 0 ]            | Store X into register
+ 05  | [ П→x ] [ 0 ]            | Load register into X
+ 06  | [ П→x ] [ 1 ]            | Load register into X
+ 07  | [ * ]                    | X = Y * X
+ 08  | [ П→x ] [ 1 ]            | Load register into X
+ 09  | [ * ]                    | X = Y * X
+ 10  | [ В/О ]                  | Return from subroutine
+ 11  | [ С/П ]                  | Prompt user: Enter value into X and press C/P
+ 12  | [ x→П ] [ 1 ]            | Store X into register
+ 13  | [ ПП ]                   | Call subroutine
+ 14  | [ 0 ] [ 2 ]              | Subroutine address
+ 15  | [ x→П ] [ 0 ]            | Store X into register
+ 16  | [ П→x ] [ 0 ]            | Load register into X
+ 17  | [ x→П ] [ 1 ]            | Store X into register
+ 18  | [ П→x ] [ 1 ]            | Load register into X
+ 19  | [ С/П ]                  | Display value in X and pause for user
+ 20  | [ С/П ]                  | Stop program execution
+========================================================================
+Program Entry Complete. Switch back to [АВТ] mode and press [В/О] [С/П].
+========================================================================

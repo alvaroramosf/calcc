@@ -1,0 +1,49 @@
+========================================================================
+ELEKTRONIKA MK-56 PHYSICAL KEYBOARD TYPING GUIDE
+Architecture: Soviet RPN (4-level X/Y/Z/T + X1) | Max Steps: 98 | Consumed: 39 (39.8%)
+Instructions for operator: Switch to [ПРОГ] mode, press [В/О], then type:
+========================================================================
+Step | Keystroke Sequence       | Function / Action Description
+-----+--------------------------+---------------------------------------
+ 00  | [ БП ]                   | Unconditional Jump
+ 01  | [ 2 ] [ 9 ]              | Jump destination address
+ 02  | [ П→x ] [ 0 ]            | Load register into X
+ 03  | [ 7 ]                    | Load numeric constant into X
+ 04  | [ В↑ ]                   | Push X to Y (Enter)
+ 05  | [ * ]                    | X = Y * X
+ 06  | [ 5 ]                    | Load numeric constant into X
+ 07  | [ В↑ ]                   | Push X to Y (Enter)
+ 08  | [ + ]                    | X = Y + X
+ 09  | [ x→П ] [ 1 ]            | Store X into register
+ 10  | [ П→x ] [ 1 ]            | Load register into X
+ 11  | [ - ]                    | X = Y - X
+ 12  | [ F ] [ x≥0 ]            | Conditional branch
+ 13  | [ 1 ] [ 7 ]              | Branch target address
+ 14  | [ БП ]                   | Unconditional Jump
+ 15  | [ 2 ] [ 4 ]              | Jump destination address
+ 16  | [ П→x ] [ 1 ]            | Load register into X
+ 17  | [ 6 ]                    | Load numeric constant into X
+ 18  | [ В↑ ]                   | Push X to Y (Enter)
+ 19  | [ - ]                    | X = Y - X
+ 20  | [ x→П ] [ 1 ]            | Store X into register
+ 21  | [ БП ]                   | Unconditional Jump
+ 22  | [ 1 ] [ 0 ]              | Jump destination address
+ 23  | [ П→x ] [ 1 ]            | Load register into X
+ 24  | [ 1 ]                    | Load numeric constant into X
+ 25  | [ В↑ ]                   | Push X to Y (Enter)
+ 26  | [ + ]                    | X = Y + X
+ 27  | [ В/О ]                  | Return from subroutine
+ 28  | [ С/П ]                  | Prompt user: Enter value into X and press C/P
+ 29  | [ x→П ] [ 0 ]            | Store X into register
+ 30  | [ ПП ]                   | Call subroutine
+ 31  | [ 0 ] [ 2 ]              | Subroutine address
+ 32  | [ x→П ] [ 0 ]            | Store X into register
+ 33  | [ П→x ] [ 0 ]            | Load register into X
+ 34  | [ x→П ] [ 1 ]            | Store X into register
+ 35  | [ П→x ] [ 1 ]            | Load register into X
+ 36  | [ С/П ]                  | Display value in X and pause for user
+ 37  | [ П→x ] [ 1 ]            | Load register into X
+ 38  | [ С/П ]                  | Stop program execution
+========================================================================
+Program Entry Complete. Switch back to [АВТ] mode and press [В/О] [С/П].
+========================================================================

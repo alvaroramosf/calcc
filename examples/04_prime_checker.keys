@@ -1,0 +1,77 @@
+========================================================================
+ELEKTRONIKA MK-56 PHYSICAL KEYBOARD TYPING GUIDE
+Architecture: Soviet RPN (4-level X/Y/Z/T + X1) | Max Steps: 98 | Consumed: 67 (68.4%)
+Instructions for operator: Switch to [ПРОГ] mode, press [В/О], then type:
+========================================================================
+Step | Keystroke Sequence       | Function / Action Description
+-----+--------------------------+---------------------------------------
+ 00  | [ БП ]                   | Unconditional Jump
+ 01  | [ 5 ] [ 7 ]              | Jump destination address
+ 02  | [ П→x ] [ 0 ]            | Load register into X
+ 03  | [ - ]                    | X = Y - X
+ 04  | [ F ] [ x=0 ]            | Conditional branch
+ 05  | [ 0 ] [ 9 ]              | Branch target address
+ 06  | [ БП ]                   | Unconditional Jump
+ 07  | [ 1 ] [ 2 ]              | Jump destination address
+ 08  | [ В/О ]                  | Return from subroutine
+ 09  | [ БП ]                   | Unconditional Jump
+ 10  | [ 1 ] [ 2 ]              | Jump destination address
+ 11  | [ 2 ]                    | Load numeric constant into X
+ 12  | [ В↑ ]                   | Push X to Y (Enter)
+ 13  | [ x→П ] [ 1 ]            | Store X into register
+ 14  | [ П→x ] [ 1 ]            | Load register into X
+ 15  | [ П→x ] [ 1 ]            | Load register into X
+ 16  | [ * ]                    | X = Y * X
+ 17  | [ x→П ] [ 2 ]            | Store X into register
+ 18  | [ П→x ] [ 2 ]            | Load register into X
+ 19  | [ П→x ] [ 0 ]            | Load register into X
+ 20  | [ - ]                    | X = Y - X
+ 21  | [ F ] [ x=0 ]            | Conditional branch
+ 22  | [ 2 ] [ 6 ]              | Branch target address
+ 23  | [ БП ]                   | Unconditional Jump
+ 24  | [ 5 ] [ 6 ]              | Jump destination address
+ 25  | [ П→x ] [ 0 ]            | Load register into X
+ 26  | [ x→П ] [ 2 ]            | Store X into register
+ 27  | [ П→x ] [ 2 ]            | Load register into X
+ 28  | [ П→x ] [ 1 ]            | Load register into X
+ 29  | [ - ]                    | X = Y - X
+ 30  | [ F ] [ x≥0 ]            | Conditional branch
+ 31  | [ 3 ] [ 5 ]              | Branch target address
+ 32  | [ БП ]                   | Unconditional Jump
+ 33  | [ 4 ] [ 1 ]              | Jump destination address
+ 34  | [ П→x ] [ 2 ]            | Load register into X
+ 35  | [ П→x ] [ 1 ]            | Load register into X
+ 36  | [ - ]                    | X = Y - X
+ 37  | [ x→П ] [ 2 ]            | Store X into register
+ 38  | [ БП ]                   | Unconditional Jump
+ 39  | [ 2 ] [ 8 ]              | Jump destination address
+ 40  | [ П→x ] [ 2 ]            | Load register into X
+ 41  | [ F ] [ x=0 ]            | Conditional branch
+ 42  | [ 4 ] [ 6 ]              | Branch target address
+ 43  | [ БП ]                   | Unconditional Jump
+ 44  | [ 4 ] [ 9 ]              | Jump destination address
+ 45  | [ В/О ]                  | Return from subroutine
+ 46  | [ БП ]                   | Unconditional Jump
+ 47  | [ 4 ] [ 9 ]              | Jump destination address
+ 48  | [ П→x ] [ 1 ]            | Load register into X
+ 49  | [ 1 ]                    | Load numeric constant into X
+ 50  | [ В↑ ]                   | Push X to Y (Enter)
+ 51  | [ + ]                    | X = Y + X
+ 52  | [ x→П ] [ 1 ]            | Store X into register
+ 53  | [ БП ]                   | Unconditional Jump
+ 54  | [ 1 ] [ 5 ]              | Jump destination address
+ 55  | [ В/О ]                  | Return from subroutine
+ 56  | [ С/П ]                  | Prompt user: Enter value into X and press C/P
+ 57  | [ x→П ] [ 0 ]            | Store X into register
+ 58  | [ ПП ]                   | Call subroutine
+ 59  | [ 0 ] [ 2 ]              | Subroutine address
+ 60  | [ x→П ] [ 0 ]            | Store X into register
+ 61  | [ П→x ] [ 0 ]            | Load register into X
+ 62  | [ x→П ] [ 1 ]            | Store X into register
+ 63  | [ П→x ] [ 1 ]            | Load register into X
+ 64  | [ С/П ]                  | Display value in X and pause for user
+ 65  | [ П→x ] [ 1 ]            | Load register into X
+ 66  | [ С/П ]                  | Stop program execution
+========================================================================
+Program Entry Complete. Switch back to [АВТ] mode and press [В/О] [С/П].
+========================================================================

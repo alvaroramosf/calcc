@@ -1,0 +1,31 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Architecture and Stack}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Historical Context and Core Circuitry}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Numeric Format and Vacuum Fluorescent Display (VFD)}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}RPN Stack Architecture (\textit {ПОЛИЗ})}{3}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Stack Register Definitions}{3}{subsubsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.4}Stack State Dynamics and Transition Matrices}{3}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}A. Data Entry and Duplication: \texttt {В$\uparrow $} (\textit {Ввод в стек} / Enter / Push)}{3}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}B. Operand Swap: \texttt {$\leftrightarrow $} (\textit {Обмен X и Y} / Swap)}{4}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}C. Downward Circular Rotation: \texttt {F} $\circlearrowright $ (\textit {Кольцевое перемещение} / Roll Down)}{4}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}D. Clear Accumulator: \texttt {Сх} (\textit {Сброс X} / Clear X)}{4}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}E. Dyadic Arithmetic Reduction ($+$, $-$, $\times $, $\div $)}{4}{subsubsection.1.4.5}%
+\contentsline {subsubsection}{\numberline {1.4.6}F. Hardware Subroutine Return Stack (\textit {Стек возврата})}{5}{subsubsection.1.4.6}%
+\contentsline {section}{\numberline {2}Memory Map and Registers}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Program Memory (\textit {ОЗУ команд})}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Operating Modes}{6}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Addressable Data Registers (\textit {Адресуемые регистры})}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Memory Addressing Modes}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Instruction Set Architecture (Opcodes)}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Pseudo-Hexadecimal VFD Display Conventions}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Official Instruction Set Table (Таблица 4)}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Control Flow and Branching}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Direct Unconditional Jump: \texttt {БП} (\textit {Безусловный переход})}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Subroutine Call and Return: \texttt {ПП} and \texttt {В/О}}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Inverted Conditional Branch Mechanics}{11}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Formal Conditional Branch Specifications}{12}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Compiler Code Generation Pattern for Conditional Constructs}{12}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Hardware Loop Counters: \texttt {F L0}, \texttt {F L1}, \texttt {F L2}, \texttt {F L3}}{12}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Indirect Branching and Dynamic Dispatch}{13}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Architectural Specification Summary for Compiler Engineers}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Practical IR Code Generation Guidelines}{14}{subsection.5.1}%

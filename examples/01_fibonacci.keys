@@ -1,0 +1,34 @@
+========================================================================
+ELEKTRONIKA MK-56 PHYSICAL KEYBOARD TYPING GUIDE
+Architecture: Soviet RPN (4-level X/Y/Z/T + X1) | Max Steps: 98 | Consumed: 24 (24.5%)
+Instructions for operator: Switch to [ПРОГ] mode, press [В/О], then type:
+========================================================================
+Step | Keystroke Sequence       | Function / Action Description
+-----+--------------------------+---------------------------------------
+ 00  | [ С/П ]                  | Prompt user: Enter value into X and press C/P
+ 01  | [ x→П ] [ 0 ]            | Store X into register
+ 02  | [ 0 ]                    | Load numeric constant into X
+ 03  | [ В↑ ]                   | Push X to Y (Enter)
+ 04  | [ x→П ] [ 1 ]            | Store X into register
+ 05  | [ 1 ]                    | Load numeric constant into X
+ 06  | [ В↑ ]                   | Push X to Y (Enter)
+ 07  | [ x→П ] [ 2 ]            | Store X into register
+ 08  | [ П→x ] [ 1 ]            | Load register into X
+ 09  | [ С/П ]                  | Display value in X and pause for user
+ 10  | [ П→x ] [ 2 ]            | Load register into X
+ 11  | [ С/П ]                  | Display value in X and pause for user
+ 12  | [ П→x ] [ 1 ]            | Load register into X
+ 13  | [ П→x ] [ 2 ]            | Load register into X
+ 14  | [ + ]                    | X = Y + X
+ 15  | [ x→П ] [ 3 ]            | Store X into register
+ 16  | [ П→x ] [ 2 ]            | Load register into X
+ 17  | [ x→П ] [ 1 ]            | Store X into register
+ 18  | [ П→x ] [ 3 ]            | Load register into X
+ 19  | [ x→П ] [ 2 ]            | Store X into register
+ 20  | [ F ] [ L0 ]             | Hardware loop decrement & branch if != 0
+ 21  | [ 1 ] [ 0 ]              | Loop restart address
+ 22  | [ П→x ] [ 2 ]            | Load register into X
+ 23  | [ С/П ]                  | Stop program execution
+========================================================================
+Program Entry Complete. Switch back to [АВТ] mode and press [В/О] [С/П].
+========================================================================

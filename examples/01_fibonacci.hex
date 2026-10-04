@@ -1,0 +1,5 @@
+; MK-56 Raw Bytecode Image for Software Emulators
+; Total bytes: 24
+00: 50 40 00 0E 41 01 0E 42 
+08: 61 50 62 50 61 62 10 43 
+16: 62 41 63 42 5D 0A 62 50 
